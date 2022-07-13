@@ -10,7 +10,7 @@ SECRET_KEY = env("SECRET_KEY")
 
 DATABASES = {"default": env.db("DATABASE_URL")}
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
+ALLOWED_HOSTS = ['www.chat-djangoapp.herokuapp.com','chat-djangoapp.herokuapp.com']
 
 CHANNEL_LAYERS = {
     "default": {
