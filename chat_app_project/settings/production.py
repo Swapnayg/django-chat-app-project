@@ -23,9 +23,6 @@ ALLOWED_HOSTS = ['www.chat-djangoapp.herokuapp.com','chat-djangoapp.herokuapp.co
 
 CHANNEL_LAYERS = {
     "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer"
-        #"CONFIG": {
-            #"hosts": [env("REDIS_URL")],
-        #},
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
     }
 }
